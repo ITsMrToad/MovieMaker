@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a bug
+labels: [bug, compat]
+assignees: ITsMrToad
+body:
+  - type: dropdown
+    id: oses
+    attributes:
+      label: What operating systems are you seeing the problem on?
+      multiple: true
+      options:
+        - Windows
+        - MacOS
+        - Linux
+  - type: dropdown
+    id: loaders
+    attributes:
+      label: What the loader are you seeing the problem on?
+      multiple: true
+      options:
+        - Forge
+        - Fabric
+        - Quilt
+        - NeoForge
+  - type: textarea
+    attributes:
+      label: Describe the problem as accurately as possible, that way it will be easier for me to fix it.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the behavior.
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: What version of the Moviemaker are you using?
+    validations:
+      required: true
