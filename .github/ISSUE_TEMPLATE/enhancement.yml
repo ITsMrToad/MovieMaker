@@ -1,0 +1,11 @@
+name: Feature request
+description: Suggest an idea
+labels: [enhancement]
+assignees: ITsMrToad
+body:
+  - type: textarea
+    attributes:
+      label: Enhancement 
+      description: Describe your idea for improving MovieMaker.
+    validations:
+      required: true
